@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Homework-4</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="left-block">
+            <button class="clear-left" onclick="clearLeft()">Clear</button>
+            <div class="left">
+                <textarea id='text' name="text" class="textarea"></textarea>
+            </div>
+        </div>
+        <button class="convert" onclick="convert()">Convert</button>
+        <div class="right-block">  
+            <button class="clear-right" onclick="clearRight()">Clear</button>
+            <select class="default" onchange="this.className=this.value" onclick="chooseColor(value)">
+                <option class="default" selected value="default">Choose color</option>
+                <option class="black" value="black">Black</option>
+                <option class="blue" value="blue">Blue</option>
+                <option class="red" value="red">Red</option>
+            </select>
+            <div class="right">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
